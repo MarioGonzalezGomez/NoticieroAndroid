@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">El Noticiero</string>
+    <string name="btnAdd">Añadir noticia</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="add">Añadir</string>
+    <string name="titular">Titular de la noticia</string>
+    <string name="autor">Autor</string>
+    <string name="fecha">Fecha en formato DD/MM/YYYY</string>
+    <string name="link">link</string>
+    <string name="removeAll">Borrar toda la lista</string>
+    <string name="like">Si te gusta nuestra app, dale al corazón</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:layout_margin="4dp"
+    android:elevation="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp">
+
+
+                <TextView
+                    android:id="@+id/titular"
+                    android:layout_width="214dp"
+                    android:layout_height="57dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Titular" />
+
+                <TextView
+                    android:id="@+id/autor"
+                    android:layout_width="175dp"
+                    android:layout_height="21dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titular"
+                    tools:text="Autor" />
+
+                <TextView
+                    android:id="@+id/fecha"
+                    android:layout_width="92dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toEndOf="@+id/autor"
+                    app:layout_constraintTop_toBottomOf="@+id/titular"
+                    tools:text="Fecha" />
+
+                <ImageView
+                    android:id="@+id/iconoEnlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_link_variant" />
+
+                <ImageView
+                    android:id="@+id/iconoDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iconoEnlace"
+                    app:srcCompat="@drawable/ic_baseline_delete_forever_24"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="87dp"
+                    android:layout_height="76dp"
+                    android:layout_marginTop="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_newspaper_variant"
+                    app:tint="@color/purple_500" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
